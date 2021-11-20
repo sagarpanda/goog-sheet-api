@@ -1,18 +1,22 @@
 {
-  "transpiler": "typescript",
   "compilerOptions": {
-    "outDir": "./lib/",
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "declarationDir": "lib",
+    "esModuleInterop": true,
+    "outDir": "lib",
+    "jsx": "react",
+    "lib": ["es5"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmit": false,
+    "resolveJsonModule": true,
+    "rootDir": "src",
     "sourceMap": true,
     "strict": true,
-    "noImplicitReturns": true,
-    "noImplicitAny": true,
-    "moduleResolution": "node",
-    "target": "ES2017",
-    "allowJs": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "skipLibCheck": true
+    "target": "es5"
   },
-  "include": ["./src/**/*"],
-  "exclude": ["./src/assets/**/*"]
+  "include": ["src/**/*"],
+  "exclude": ["**/node_modules", "**/lib", "**/dist", "**/*.md", "**/rollup.config.js"]
 }

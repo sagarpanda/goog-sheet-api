@@ -1,4 +1,5 @@
-const { google } = require('googleapis');
+// @ts-ignore
+import { google } from 'googleapis';
 import Sheet from './Sheet';
 import { googleAuthJWT } from './utils';
 
